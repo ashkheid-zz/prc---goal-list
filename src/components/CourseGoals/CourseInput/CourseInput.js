@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import Button from '../../UI/Button/Button';
 
@@ -29,7 +29,7 @@ const FormControl = styled.div`
 
   ${(props) =>
     props.invalid &&
-    `
+    css`
       & input {
         border-color: red;
         background-color: lightcoral;
